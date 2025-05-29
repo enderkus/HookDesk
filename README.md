@@ -110,6 +110,36 @@ Whether you're developing webhook integrations, testing API callbacks, or debugg
 
 > **Note**: If you see a security warning, go to System Preferences > Security & Privacy > General and click "Open Anyway"
 
+#### macOS Security Warning
+
+When you first run HookDesk, macOS might display a security warning because the app is not notarized by Apple. This is normal for independent developer apps. To resolve this:
+
+**Method 1: System Settings (GUI)**
+1. **Try to open HookDesk** (it will show a warning)
+2. **Open System Settings** (or System Preferences on older macOS)
+3. **Go to Privacy & Security**
+4. **Scroll down and click "Open Anyway"** button
+5. **Confirm by clicking "Open"** when prompted
+
+**Method 2: Terminal (Quick Fix)**
+```bash
+# Remove app from quarantine (recommended)
+# Replace with your actual HookDesk.app path
+xattr -dr com.apple.quarantine /path/to/HookDesk.app
+
+# Examples for common locations:
+xattr -dr com.apple.quarantine /Applications/HookDesk.app
+xattr -dr com.apple.quarantine ~/Desktop/HookDesk.app
+xattr -dr com.apple.quarantine ~/Downloads/HookDesk.app
+
+# OR allow the app through Gatekeeper
+spctl --add /path/to/HookDesk.app
+```
+
+> **Tip**: To find your app's exact path, drag HookDesk.app from Finder into Terminal and the full path will appear automatically.
+
+After this one-time setup, HookDesk will launch normally. This is a standard security feature for apps downloaded outside the App Store.
+
 ### Build from Source
 
 ```bash
