@@ -67,7 +67,7 @@ Whether you're developing webhook integrations, testing API callbacks, or debugg
 ## 📱 Screenshots
 
 <div align="center">
-  <img src="screenshot.jpg" alt="HookDesk Application Screenshot" width="800">
+  <img src="screenshot.JPG" alt="HookDesk Application Screenshot" width="800">
   <p><em>HookDesk - Modern Webhook Testing Interface</em></p>
 </div>
 
