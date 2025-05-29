@@ -176,6 +176,20 @@ HookDesk integrates with **localhost.run** to provide public URLs:
 - **Runtime Control**: Enable/disable without restarting the server
 - **URL Copying**: One-click copy for easy sharing
 
+> **⚠️ Important Note**: When enabling the tunnel for the first time, localhost.run may require SSH host key verification (fingerprint confirmation). If the tunnel appears to be "not working" initially, this is likely due to the SSH connection waiting for fingerprint acceptance. This is a one-time security verification that ensures secure tunneling. The fingerprint verification happens in the background and may take a few moments to complete during the first connection attempt.
+
+#### First-Time Setup (Recommended)
+
+To avoid delays when using the tunnel feature, it's recommended to establish the SSH connection once before using HookDesk:
+
+```bash
+# Run this command once to accept localhost.run's SSH fingerprint
+ssh -o StrictHostKeyChecking=no localhost.run
+# Press Ctrl+C after connection is established (you'll see connection messages)
+```
+
+This one-time setup ensures that the tunnel feature works immediately when you enable it in HookDesk.
+
 ## 🛠 Technical Stack
 
 ### Backend
