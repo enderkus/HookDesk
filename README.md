@@ -13,21 +13,29 @@
 <div align="center">
   <h3>🪝 A Modern Desktop Webhook Testing Tool</h3>
   <p>Built with Go, Wails, React & TypeScript</p>
+  
+  <br>
+  
+  <a href="https://github.com/enderkus/HookDesk/releases/tag/v0.9.0">
+    <img src="https://img.shields.io/badge/Download-v0.9.0%20Beta-blue?style=for-the-badge&logo=apple&logoColor=white" alt="Download HookDesk">
+  </a>
+  
+  <p><strong>🎯 Ready to Download for Apple Silicon Macs!</strong></p>
 </div>
 
 ---
 
 ## 📋 Table of Contents
 
-- [About](#about)
-- [Features](#features)
-- [Screenshots](#screenshots)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Technical Stack](#technical-stack)
-- [Development](#development)
-- [Contributing](#contributing)
-- [License](#license)
+- [About](#-about)
+- [Features](#-features)
+- [Screenshots](#-screenshots)
+- [Installation](#-installation)
+- [Usage](#-usage)
+- [Technical Stack](#-technical-stack)
+- [Development](#-development)
+- [Contributing](#-contributing)
+- [License](#-license)
 
 ## 🎯 About
 
@@ -67,24 +75,40 @@ Whether you're developing webhook integrations, testing API callbacks, or debugg
 ## 📱 Screenshots
 
 <div align="center">
-  <img src="screenshot.jpg" alt="HookDesk Application Screenshot" width="800">
+  <img src="screenshot.JPG" alt="HookDesk Application Screenshot" width="800">
   <p><em>HookDesk - Modern Webhook Testing Interface</em></p>
 </div>
 
 ## 🚀 Installation
 
+### 📥 Quick Download (Recommended)
+
+**Ready to use immediately!** Download the latest pre-built version:
+
+<div align="center">
+  <a href="https://github.com/enderkus/HookDesk/releases/tag/v0.9.0">
+    <img src="https://img.shields.io/badge/Download%20Now-HookDesk%20v0.9.0%20Beta-success?style=for-the-badge&logo=download&logoColor=white" alt="Download HookDesk v0.9.0">
+  </a>
+</div>
+
+<br>
+
 ### Prerequisites
 - macOS 10.15+ (Catalina or later)
+- Apple Silicon (M1, M1 Pro, M1 Max, M2, M2 Pro, M2 Max, M3, etc.)
 - No additional dependencies required
 
 ### Download & Install
 
-1. **Download the latest release** from the [Releases](https://github.com/enderkus/hookdesk/releases) page
-2. **Extract the archive** to your Applications folder
-3. **Run HookDesk.app** by double-clicking or via terminal:
+1. **Download the latest release** from the [HookDesk v0.9.0 Beta](https://github.com/enderkus/HookDesk/releases/tag/v0.9.0) page
+2. **Extract `HookDesk-v0.9.0-darwin-arm64.zip`** archive
+3. **Move `HookDesk.app`** to your Applications folder
+4. **Run HookDesk.app** by double-clicking or via terminal:
    ```bash
-   ./HookDesk.app/Contents/MacOS/HookDesk
+   ./Applications/HookDesk.app/Contents/MacOS/HookDesk
    ```
+
+> **Note**: If you see a security warning, go to System Preferences > Security & Privacy > General and click "Open Anyway"
 
 ### Build from Source
 
